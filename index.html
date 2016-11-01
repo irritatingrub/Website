@@ -45,7 +45,7 @@ function clicked() {
 text.innerHTML ="Dabz: " + dabz;
 
 window.setInterval(function(){
-	datetext.innerHTML = "MICHAEL JACKSON COFFIN LIVESTREAM<br>" + new Date(year, month, day, hours, minutes, seconds);
+	datetext.innerHTML = "MICHAEL JACKSON COFFIN LIVESTREAM<br>" + new Date().toUTCString();
 }, 1000);
 
 
