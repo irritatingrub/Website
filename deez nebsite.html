@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<title>What I hate</title>
+<body align="center">
+
+
+<h1>I hate many</h1>
+<p>Joey is an American sitcom and a spin-off of Friends starring Matt LeBlanc reprising his role as Joey Tribbiani. It premiered on the NBC television network, on ....</p>
+<button style="height:400px;width:500px" id="but" onclick="clicked()">Deez Clicks<br><img style="height:350px;width:450px" src="http://fungameraltersheim.de/inc/images/uploads/useravatare/51.jpg"></button>
+<p id="text" style="font-size:31px; color:green"></p>
+
+<p>get 50 dabz for a worthy prize</p>
+<p>A website by Jamin 'Jamin Cottle' Cottle </p>
+
+
+
+</body>
+<script>
+var text =document.getElementById("text");
+var but =document.getElementById("but");
+var dabz = 0;
+var dabPic = false;
+
+
+//document.write ("I hate yellows and blacks and pinks and purples and whites and niggers and greys and");
+
+
+function clicked() {
+	dabz = dabz + 1;
+
+	dabPic =!dabPic;
+	if (dabPic == true) but.innerHTML = 'Deez Clicks<br><img style="height:350px;width:450px" src="http://darkroom.baltimoresun.com/wp-content/uploads/2013/04/REU-USA-OBAMA_-16.jpg">'
+	else but.innerHTML = 'Deez Clicks<br><img style="height:350px;width:450px" src="http://fungameraltersheim.de/inc/images/uploads/useravatare/51.jpg">'
+	
+	if (dabz == 50) {
+		alert ("gotem");
+	}
+	text.innerHTML ="Dabz: " + dabz;
+
+}
+
+text.innerHTML ="Dabz: " + dabz;
+
+
+
+</script>
+</html>
+
