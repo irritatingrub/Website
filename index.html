@@ -10,7 +10,7 @@
 <p id="date" style="font-size:31px; color:green; font-family:Arial"></p> 
 
 <img src="disney on ice.png" alt="Fuck something fricked" height="241" width="377">
-<p id="date" style="font-size:31px; color:green; font-family:Arial"></p>
+<p id="date_disney" style="font-size:31px; color:green; font-family:Arial"></p>
 
 <br>	
 <p>Joey is an American sitcom and a spin-off of Friends starring Matt LeBlanc reprising his role as Joey Tribbiani. It premiered on the NBC television network, on ....</p>
@@ -29,7 +29,7 @@ var but =document.getElementById("but");
 var dabz = 0;
 var dabPic = false;
 var datetext =document.getElementById("date");
-
+var datetext_disney =document.getElementById("date_disney");
 
 function clicked() {
 	dabz = dabz + 1;
@@ -49,6 +49,7 @@ text.innerHTML ="Dabz: " + dabz;
 
 window.setInterval(function(){
 	datetext.innerHTML = "MICHAEL JACKSON COFFIN LIVESTREAM<br>" + new Date().toUTCString();
+	datetext_disney.innerHTML = "WALT DISNEY CRYOCHAMBER LIVESTREAM<br>" + new Date().toUTCString();
 }, 1000);
 
 
