@@ -17,11 +17,10 @@
 <img src="disney on ice.png" alt="Fuck something fricked" height="241" width="377">
 <p id="date_disney" style="font-size:31px; color:green; font-family:Arial"></p>
 
-<audio controls>
-  <source src="http://www.soundboards.ws/data/sounds/2/486.mp3" type="audio/ogg">
+
  
 
-</audio>
+
 
 
 
@@ -39,5 +38,8 @@ window.setInterval(function(){
 	datetext.innerHTML = "MICHAEL JACKSON COFFIN LIVESTREAM<br>" + new Date().toUTCString();
 	datetext_disney.innerHTML = "WALT DISNEY CRYOCHAMBER LIVESTREAM<br>" + new Date().toUTCString();
 }, 1000);
+
+var audio = new Audio('http://www.soundboards.ws/data/sounds/2/486.mp3');
+audio.play();
 </script>
 </html>
