@@ -1,30 +1,67 @@
-<!doctype html>
+<!DOCTYPE html>
+<html>
+<title>What I hate</title>
+<body align="center" style="font-family:Comic sans MS">
 
-<html lang="en">
-<head>
-<style type="text/css">
-body{
-	margin:0px;
-	background:#FDF3E7;
-}
-.header-cont {
-	width: 100%;
-	position: fixed;
-	top: 0px
-}
-.content {	
-	width: 960px
-	background: #F0F0F0;
-	border: 1px solid #CCC;
-	height: 2000px;
-	margin: 20px auto;
-}
-<h1> deez nuts </h1>
-</style>
-  
-</head>
+<div class="header">
+  <h1 class="header__content-text">
+    Header content will come here
+  </h1>
+</div>
+<div class="page__content-container">
+  <div>
+    <a href="http://imgur.com/k9hz3">
+      <img src="deez noopthts guy.jpg" title="Hosted by imgur.com" alt="" />
+    </a>
+  </div>
+  <div>
+    <a href="http://imgur.com/TXuFQ">
+      <img src="deez noopthts guy.jpg" title="Hosted by imgur.com" alt="" />
+    </a>
+  </div>
+</div>
 
-<body>
-  
+
+	
+
+
+<h1>I hate many</h1>
+
+<a href="celeblivestream.html">Celebrity Live Stream- Exclusive Peek Into The Lives Of Your Fav Celebs!!1!11</a>
+
+<br>	
+<p>Joey is an American sitcom and a spin-off of Friends starring Matt LeBlanc reprising his role as Joey Tribbiani. It premiered on the NBC television network, on ....</p>
+<button style="height:400px;width:500px" id="but" onclick="clicked()">Deez Clicks<br><img style="height:350px;width:450px" src="deez noopthts guy.jpg"></button>
+<p id="text"></p>
+
+<p>get 50 dabz for a worthy prize</p>
+<p>A website by Jamin 'Jamin Cottle' Cottle </p>
+
+
+
 </body>
+<script>
+var text =document.getElementById("text");
+var but =document.getElementById("but");
+var dabz = 0;
+var dabPic = false;
+function clicked() {
+	dabz = dabz + 1;
+	dabPic =!dabPic;
+	if (dabPic == true) but.innerHTML = 'Deez Clicks<br><img style="height:350px;width:450px" src="http://darkroom.baltimoresun.com/wp-content/uploads/2013/04/REU-USA-OBAMA_-16.jpg">'
+	else but.innerHTML = 'Deez Clicks<br><img style="height:350px;width:450px" src="deez noopthts guy.jpg">'
+	
+	if (dabz % 50 == 0) {
+		alert ("gotem");
+	}
+	text.innerHTML ="Dabz: " + dabz;
+}
+text.innerHTML ="Dabz: " + dabz;
+window.setInterval(function(){
+}, 1000);
+</script>
+
+
+
+
 </html>
