@@ -3,6 +3,24 @@
 <title>What I hate</title>
 <body align="center" style="font-family:Comic sans MS">
 
+<div class="header">
+  <h1 class="header__content-text">
+    Header content will come here
+  </h1>
+</div>
+<div class="page__content-container">
+  <div>
+    <a href="http://imgur.com/k9hz3">
+      <img src="deez noopthts guy.jpg" title="Hosted by imgur.com" alt="" />
+    </a>
+  </div>
+  <div>
+    <a href="http://imgur.com/TXuFQ">
+      <img src="deez noopthts guy.jpg" title="Hosted by imgur.com" alt="" />
+    </a>
+  </div>
+</div>
+
 
 	
 
@@ -27,10 +45,8 @@ var text =document.getElementById("text");
 var but =document.getElementById("but");
 var dabz = 0;
 var dabPic = false;
-
 function clicked() {
 	dabz = dabz + 1;
-
 	dabPic =!dabPic;
 	if (dabPic == true) but.innerHTML = 'Deez Clicks<br><img style="height:350px;width:450px" src="http://darkroom.baltimoresun.com/wp-content/uploads/2013/04/REU-USA-OBAMA_-16.jpg">'
 	else but.innerHTML = 'Deez Clicks<br><img style="height:350px;width:450px" src="deez noopthts guy.jpg">'
@@ -39,17 +55,13 @@ function clicked() {
 		alert ("gotem");
 	}
 	text.innerHTML ="Dabz: " + dabz;
-
 }
-
 text.innerHTML ="Dabz: " + dabz;
-
 window.setInterval(function(){
-
 }, 1000);
-
-
-
 </script>
-</html>
 
+
+
+
+</html>
