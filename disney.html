@@ -18,7 +18,7 @@
 <h1>Walt Disney's Cryo Chamber Livestream. Be The First to Witness His Ressurection </h1>
 <div  style="border:2px solid black; width:380px; margin: 0 auto"> 
 	<img src="disney on ice_chamber.png" alt="Fuck something fricked" height="241" width="377">
-	<p id="date" style="font-size:31px; color:green; font-family:Arial"></p> 
+        <p id="date" style="font-size:31px; color:green; font-family:Arial"></p> 
 </div>
 	
 <br>
@@ -40,12 +40,14 @@
 var text =document.getElementById("text");
 var but =document.getElementById("but");
 var datetext =document.getElementById("date");
-
+var audio = new Audio('486 (mp3cut.net) (3).mp3');
 	
 window.setInterval(function(){
 	if (Math.random() < 0.002); audio.play();
+	datetext.innerHTML = "MICHAEL JACKSON COFFIN LIVESTREAM<br>" + new Date().toUTCString();
 	datetext_disney.innerHTML = "WALT DISNEY CRYOCHAMBER LIVESTREAM<br>" + new Date().toUTCString();
 }, 1000);
+
 </script>
 </html>
 
